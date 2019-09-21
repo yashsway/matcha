@@ -1,0 +1,19 @@
+@import "../../styles/mixins/base";
+
+.recommended-list {
+  overflow: auto;
+  white-space: nowrap;
+  height: 100px;
+  margin-top: 10px;
+
+  &__item {
+    position: relative;
+    display: inline-block;
+    height: 90px;
+    width: 245px;
+    background-color: #cecece;
+    margin-right: 10px;
+    background: linear-gradient(360deg, #2D4133 4.55%, rgba(45, 65, 51, 0) 77.4%);
+
+  }
+}

@@ -1,31 +1,47 @@
 import React, { Component } from "react";
 import "./navbar.scss";
+import styled from "styled-components";
+import styleConfig from "../../styles/mixins/variables";
+import buy from "../../Assets/Icons/Buy.svg";
+import sell from "../../Assets/Icons/Sell.svg";
+import search from "../../Assets/Icons/Search.svg";
+import profile from "../../Assets/Icons/Profile.svg";
 
-class Navar extends Component {
+const NavTitle = styled.p`
+  color: ${props => props.color};
+`;
+
+export default class Navbar extends Component {
   render() {
     return (
-      <div className="bg-white min-w-full	 navbar" >
-				<ul className="flex flex-row justify-around">
-					<li className="flex flex-col items-center w-10">
-						<div className="bg-gray-500 w-8 h-8 rounded-full"></div>
-						<p className="text-xs">Buy</p>
-					</li>
-					<li className="flex flex-col items-center w-10">
-						<div className="bg-gray-500 w-8 h-8 rounded-full"></div>
-						<p className="text-xs">Sell</p>
-					</li>
-					<li className="flex flex-col items-center w-10">
-						<div className="bg-gray-500 w-8 h-8 rounded-full"></div>
-						<p className="text-xs">Search</p>
-					</li>
-					<li className="flex flex-col items-center w-10">
-						<div className="bg-gray-500 w-8 h-8 rounded-full"></div>
-						<p className="text-xs">Profile</p>
-					</li>
-				</ul>
+      <div className="bg-white min-w-full navbar">
+        <ul className="flex flex-row justify-around">
+          <li className="flex flex-col items-center w-10">
+            <img className="w-8 h-8" src={buy} />
+            <NavTitle className="text-xs" color={styleConfig.colors.matcha}>
+              Buy
+            </NavTitle>
+          </li>
+          <li className="flex flex-col items-center w-10">
+            <img className="w-8 h-8" src={sell} />
+            <NavTitle className="text-xs" color={styleConfig.colors.matcha}>
+              Sell
+            </NavTitle>
+          </li>
+          <li className="flex flex-col items-center w-10">
+            <img className="w-8 h-8" src={search} />
+            <NavTitle className="text-xs" color={styleConfig.colors.matcha}>
+              Search
+            </NavTitle>
+          </li>
+          <li className="flex flex-col items-center w-10">
+            <img className="w-8 h-8" src={profile} />
+            <NavTitle className="text-xs" color={styleConfig.colors.matcha}>
+              Profile
+            </NavTitle>
+          </li>
+        </ul>
       </div>
     );
   }
 }
-
-export default Navar;
