@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import AvatarCircle from '../../components/AvatarCircle/AvatarCircle';
+import AvatarCircle from '../../components/AvatarCircle';
 
 const Hero = styled.div`
   flex: 0 1 298px;

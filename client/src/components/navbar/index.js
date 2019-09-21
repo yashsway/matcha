@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./navbar.scss";
 
-class Navar extends Component {
+export default class Navbar extends Component {
   render() {
     return (
       <div className="bg-white min-w-full	 navbar" >
@@ -27,5 +27,3 @@ class Navar extends Component {
     );
   }
 }
-
-export default Navar;
