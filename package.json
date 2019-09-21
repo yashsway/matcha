@@ -1,0 +1,22 @@
+{
+  "name": "matcha",
+  "version": "0.0.1",
+  "description": "food sustainability app that matches vendors with other entities to prevent food waste",
+  "scripts": {
+    "setup": "yarn install && concurrently \"cd client && yarn install\" \"cd server && yarn install\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MightyRevenge/matcha.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/MightyRevenge/matcha/issues"
+  },
+  "homepage": "https://github.com/MightyRevenge/matcha#readme",
+  "devDependencies": {
+    "concurrently": "^4.1.2"
+  }
+}
