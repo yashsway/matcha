@@ -2,19 +2,20 @@ import React from 'react';
 import './App.scss';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-// pages
-import HomePage from './pages/HomePage/HomePage';
+// components
 
-// Nav Bar
-import Navbar from "./components/navbar"
+// pages
+import LoginPage from './pages/LoginPage';
+import MainPage from './pages/MainPage';
 
 function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={HomePage}></Route>
+        <Route exact path="/" component={LoginPage}></Route>
+        <Route path="/" component={MainPage}></Route>
+        {/* TODO: 404 here. */}
       </Switch>
-      <Navbar />
     </BrowserRouter>
   );
 }
