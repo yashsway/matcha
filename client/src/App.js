@@ -1,14 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.scss';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
+// pages
+import HomePage from './pages/HomePage/HomePage';
 
 function App() {
   return (
-    <main className="bg-green-200">
-      <div className="container min-h-screen mx-auto font-sans">
-        <h1 className="text-6xl font-bold">Matcha</h1>
-      </div>
-    </main>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={HomePage}></Route>
+      </Switch>
+    </BrowserRouter>
   );
 }
 
