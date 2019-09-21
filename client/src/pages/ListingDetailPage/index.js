@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import AvatarCircle from '../../components/AvatarCircle';
+import AddToCartCard from '../../components/AddToCartCard';
 
 const Hero = styled.div`
   flex: 0 1 298px;
@@ -62,6 +63,9 @@ export default class ListingDetailPage extends Component {
         <ListingDetails className="p-4">
           {this.state.listing.desc}
         </ListingDetails>
+        <AddToCartCard>
+          
+        </AddToCartCard>
       </section>
     )
   }
