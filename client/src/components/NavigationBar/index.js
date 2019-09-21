@@ -1,17 +1,17 @@
 import React, { Component } from "react";
-import "./navbar.scss";
+import "./style.scss";
 import styled from "styled-components";
 import styleConfig from "../../styles/mixins/variables";
-import buy from "../../Assets/Icons/Buy.svg";
-import sell from "../../Assets/Icons/Sell.svg";
-import search from "../../Assets/Icons/Search.svg";
-import profile from "../../Assets/Icons/Profile.svg";
+import buy from "../../assets/icons/Buy.svg";
+import sell from "../../assets/icons/Sell.svg";
+import search from "../../assets/icons/Search.svg";
+import profile from "../../assets/icons/Profile.svg";
 
 const NavTitle = styled.p`
   color: ${props => props.color};
 `;
 
-export default class Navbar extends Component {
+export default class NavigationBar extends Component {
   render() {
     return (
       <div className="bg-white min-w-full navbar">
