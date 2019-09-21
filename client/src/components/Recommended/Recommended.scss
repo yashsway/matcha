@@ -13,7 +13,35 @@
     width: 245px;
     background-color: #cecece;
     margin-right: 10px;
-    background: linear-gradient(360deg, #2D4133 4.55%, rgba(45, 65, 51, 0) 77.4%);
-
   }
+}
+
+.brocolli {
+  background-image: linear-gradient(360deg, #2D4133 4.55%, rgba(45, 65, 51, 0) 77.4%),
+  url('../../Assets//Images/brocolli.jpg');
+  background-size: 300px;
+}
+
+.bok-choy {
+  background-image: linear-gradient(360deg, #2D4133 4.55%, rgba(45, 65, 51, 0) 77.4%),
+  url('../../Assets//Images/bok-choy.jpg');
+  background-size: 250px 100px;
+}
+
+.carrots {
+  background-image: linear-gradient(360deg, #2D4133 4.55%, rgba(45, 65, 51, 0) 77.4%),
+  url('../../Assets//Images/carrots.jpg');
+  background-size: 250px 100px;
+}
+
+.potatoes {
+  background-image: linear-gradient(360deg, #2D4133 4.55%, rgba(45, 65, 51, 0) 77.4%),
+  url('../../Assets//Images/potatoes.jpg');
+  background-size: 250px 120px;
+}
+
+.red-peppers {
+  background-image: linear-gradient(360deg, #2D4133 4.55%, rgba(45, 65, 51, 0) 77.4%),
+  url('../../Assets//Images/red-peppers.jpg');
+  background-size: 250px 120px;
 }
