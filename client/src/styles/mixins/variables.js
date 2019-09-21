@@ -1,5 +1,5 @@
 export default {
-  colors: {
-    matcha: "#12038102"
-  }
+    colors: {
+        matcha: "#699472"
+    }
 };
