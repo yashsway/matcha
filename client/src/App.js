@@ -6,6 +6,9 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage/HomePage';
 import ListingDetailPage from './pages/ListingDetailPage/ListingDetailPage';
 
+// Nav Bar
+import Navbar from "./components/navbar"
+
 function App() {
   return (
     <BrowserRouter>
@@ -13,6 +16,7 @@ function App() {
         <Route exact path="/" component={HomePage}></Route>
         <Route path="/listing/:id" component={ListingDetailPage}></Route>
       </Switch>
+      <Navbar />
     </BrowserRouter>
   );
 }

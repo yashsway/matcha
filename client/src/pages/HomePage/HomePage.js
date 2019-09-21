@@ -4,10 +4,14 @@ import './HomePage.scss';
 export default class HomePage extends Component {
   render() {
     return (
-      <main className="bg-green-200">
-        <div className="container min-h-screen mx-auto font-sans">
-          <h1 className="text-6xl font-bold">Matcha</h1>
+      <main>
+        <div className="container mx-auto font-sans">
+          <h1 className="text-xl p-3">Matcha</h1>
         </div>
+          <div className="flex-row w-24 justify-between">
+            <a href="#">BUY</a>
+            <a href="#">SELL</a>
+          </div>
       </main>
     );
   }
