@@ -8,6 +8,7 @@ import BuyHomePage from "../BuyHomePage";
 import ListingDetailPage from "../ListingDetailPage";
 import AddNewListing from "../AddNewListing";
 import Checkout from "../../components/Checkout"
+import SellHomePage from "../SellHomePage";
 
 export default class MainPage extends Component {
   componentDidMount() {
@@ -25,8 +26,9 @@ export default class MainPage extends Component {
           <Route path="/buy/:id/checkout" component={Checkout}></Route>
           <Route path="/buy/:id" component={ListingDetailPage}></Route>
           <Route exact path="/sell/add" component={AddNewListing}></Route>
-          <Route path="/sell/:id" component={<></>}></Route>
-          <Route path="/sell" component={<></>}></Route>
+          {/* TODO: sell details route */}
+          <Route path="/sell/:id"></Route>
+          <Route path="/sell" component={SellHomePage}></Route>
           <Route path="/buy" component={BuyHomePage}></Route>
         </Switch>
         <Navigationbar />
