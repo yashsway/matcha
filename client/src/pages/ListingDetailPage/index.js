@@ -7,8 +7,18 @@ import AvatarCircle from '../../components/AvatarCircle';
 import AddToCartCard from '../../components/AddToCartCard';
 import InfoLine from '../../components/InfoLine';
 
+import potato from '../../assets/images/potatoes.jpg';
+import broc from '../../assets/images/brocolli.jpg';
+import carrots from '../../assets/images/carrots.jpg';
+import tomatoes from '../../assets/images/tomatoes.jpg';
+import pepper from '../../assets/images/red-peppers.jpg';
+import bokChoy from '../../assets/images/bok-choy.jpg';
+
 const Hero = styled.div`
   flex: 0 1 298px;
+  background: ${props => `linear-gradient(360deg, #2D4133 4.55%, rgba(45, 65, 51, 0) 77.4%),
+  url(${props.image})`};
+  background-size: 600px 500px;
 `;
 const Navigation = styled.div`
   flex: 1 0 auto;
@@ -39,6 +49,25 @@ export default class ListingDetailPage extends Component {
     this.getItem();
   }
 
+  getImage = () => {
+    switch(this.props.match.params.id.toLowerCase()) {
+      case "potatoes":
+        return potato;
+      case "broccolli":
+        return broc;
+      case "tomatoes":
+        return tomatoes;
+      case "carrots":
+        return carrots;
+      case "bok-choy":
+        return bokChoy;
+      case "red-peppers":
+        return pepper;
+      default:
+        return broc;
+    }
+  }
+
   getItem() {
     if (this.props.match && this.props.match.params.id) {
       if (this.state.data) {
@@ -57,7 +86,7 @@ export default class ListingDetailPage extends Component {
   render() {
     return (
       <section className={`${this.state.base} min-h-screen flex flex-col`}>
-        <Hero className="bg-gray-700 text-gray-100 flex flex-col broccoli-buy">
+        <Hero className="bg-gray-700 text-gray-100 flex flex-col" image={this.getImage()}>
           <Navigation className="p-4 flex-auto">
             <Link to={`${this.isSellerView() ? '/sell' : '/buy'}`}>&lt; Back</Link>
           </Navigation>

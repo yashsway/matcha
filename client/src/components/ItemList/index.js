@@ -25,7 +25,7 @@ export class ItemList extends Component {
               </div>
             </li>
           </Link>
-          <Link to={`buy/redpeppers`}>
+          <Link to={`buy/red-peppers`}>
             <li className="h-32 mb-4 relative item-card rounded red-peppers-item">
               <div className="absolute bottom-0 text-white pb-1 pl-2 w-full">
                 <div className="flex flex-row justify-between mb-4">

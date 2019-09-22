@@ -8,6 +8,10 @@ import ItemList from "../../components/ItemList";
 import LogoBox from "../../components/LogoBox";
 
 export default class HomePage extends Component {
+  redirectToDetails = (id) => {
+    this.props.history.push(`buy/details/${id}`);
+  }
+
   render() {
     return (
       <main className="mx-4 main-container">
@@ -21,7 +25,7 @@ export default class HomePage extends Component {
           <Link to="sell/current">SELL</Link>
         </div>
         <Recommended />
-        <ItemList />
+        <ItemList redirector={this.redirectToDetails}/>
       </main>
     );
   }
