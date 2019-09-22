@@ -1,0 +1,17 @@
+@import '../../styles/mixins/base';
+.navigation-bar {
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  z-index: 1001;
+
+  & > ul > li > p {
+    padding-top: 5px;
+  }
+  & .nav-link-wrapper .nav-link {
+    opacity: 0.5;
+  }
+  & .nav-link-wrapper .nav-link.selected {
+    opacity: 1;
+  }
+}
