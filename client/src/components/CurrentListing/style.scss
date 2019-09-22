@@ -1,31 +1,25 @@
 @import "../../styles/mixins/base";
 
-.red-peppers-item {
-    background: linear-gradient(360deg, #2D4133 4.55%, rgba(45, 65, 51, 0) 77.4%),
-    url('../../assets/images/red-peppers.jpg');
-    background-size: 400px 150px;
-}
-
-.potatoes-item {
+.potatoes-sell {
     background: linear-gradient(360deg, #2D4133 4.55%, rgba(45, 65, 51, 0) 77.4%),
     url('../../assets/images/potatoes.jpg');
     background-size: 400px 150px;
 }
 
-.carrots-item {
-    background: linear-gradient(360deg, #2D4133 4.55%, rgba(45, 65, 51, 0) 77.4%),
-    url('../../assets/images/carrots.jpg');
-    background-size: 400px 150px;
-}
-
-.bok-choy-item {
+.bok-choy-sell {
     background: linear-gradient(360deg, #2D4133 4.55%, rgba(45, 65, 51, 0) 77.4%),
     url('../../assets/images/bok-choy.jpg');
     background-size: 400px 150px;
 }
 
-.brocolli-item {
+.brocolli-sell {
     background: linear-gradient(360deg, #2D4133 4.55%, rgba(45, 65, 51, 0) 77.4%),
     url('../../assets/images/brocolli.jpg');
     background-size: 400px 250px;
+}
+
+.tomatoes-sell {
+    background: linear-gradient(360deg, #2D4133 4.55%, rgba(45, 65, 51, 0) 77.4%),
+    url('../../assets/images/tomatoes.jpg');
+    background-size: 400px 200px;
 }

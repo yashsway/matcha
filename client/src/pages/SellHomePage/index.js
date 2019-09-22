@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import { Switch, Route, Link } from "react-router-dom";
-import "./SellHomePage.scss";
+import { Switch, Route, NavLink } from "react-router-dom";
+import "./style.scss";
+import addBtn from "../../assets/icons/plus.svg";
 
 // components
-import NavBar from "../../components/navbar";
+import NavigationBar from "../../components/NavigationBar";
 
 // pages
 import CurrentListing from "../../components/CurrentListing";
@@ -30,23 +31,41 @@ export class SellHomePage extends Component {
                   fill="#699472"
                 />
               </svg>
-              <h1 className="text-xl header ml-2">Matcha</h1>
+              <h1 className="text-2xl header ml-2">Matcha</h1>
             </div>
           </div>
-          <div className="flex flex-row w-24 justify-between m-auto">
-            <Link to={`${this.props.match.path}`}>Current</Link>
-            <Link to={`${this.props.match.path}/sold`}>Sold</Link>
+          <h2 className="text-2xl font-bold mb-4">Your Listings</h2>
+          <div className="flex flex-row w-40 justify-between m-auto pb-6">
+            <NavLink
+              activeClassName="sell-active"
+              className="text-xl"
+              to={`${this.props.match.path}/current`}
+            >
+              Current
+            </NavLink>
+            <NavLink
+              activeClassName="sell-active"
+              className="text-xl"
+              to={`${this.props.match.path}/sold`}
+            >
+              Sold
+            </NavLink>
           </div>
-          <h2 className="text-xl font-bold ">Your Listings</h2>
+          <div className="add-btn h-16 w-16 rounded-full flex align-middle justify-center">
+            <img className="w-5" src={addBtn} alt="Plus Icon" />
+          </div>
           <Switch>
             <Route
               path={`${this.props.match.path}/sold`}
               component={SoldItems}
             />
-            <Route component={CurrentListing} />
+            <Route
+              path={`${this.props.match.path}/current`}
+              component={CurrentListing}
+            />
           </Switch>
         </section>
-        <NavBar />
+        <NavigationBar />
       </>
     );
   }

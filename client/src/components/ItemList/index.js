@@ -19,8 +19,6 @@ export class ItemList extends Component {
               <p className="absolute bottom-0 text-xs mb-1">Honeyfield Farms</p>
             </div>
           </li>
-        </ul>
-        <ul className="mb-2">
           <li className="h-32 mb-4 relative item-card rounded potatoes-item">
             <div className="absolute bottom-0 text-white pb-1 pl-2 w-full">
               <div className="flex flex-row justify-between mb-4">
@@ -30,8 +28,6 @@ export class ItemList extends Component {
               <p className="absolute bottom-0 text-xs mb-1">Honeyfield Farms</p>
             </div>
           </li>
-        </ul>
-        <ul className="mb-2">
           <li className="h-32 mb-4 relative item-card rounded carrots-item">
             <div className="absolute bottom-0 text-white pb-1 pl-2 w-full">
               <div className="flex flex-row justify-between mb-4">
@@ -41,8 +37,6 @@ export class ItemList extends Component {
               <p className="absolute bottom-0 text-xs mb-1">Honeyfield Farms</p>
             </div>
           </li>
-        </ul>
-        <ul className="mb-2">
           <li className="h-32 mb-4 relative item-card rounded bok-choy-item">
             <div className="absolute bottom-0 text-white pb-1 pl-2 w-full">
               <div className="flex flex-row justify-between mb-4">
@@ -52,9 +46,7 @@ export class ItemList extends Component {
               <p className="absolute bottom-0 text-xs mb-1">Honeyfield Farms</p>
             </div>
           </li>
-        </ul>
-        <ul className="mb-24">
-          <li className="h-32 mb-4 relative item-card rounded brocolli-item">
+          <li className="h-32 mb-24 relative item-card rounded brocolli-item">
             <div className="absolute bottom-0 text-white pb-1 pl-2 w-full">
               <div className="flex flex-row justify-between mb-4">
                 <p className="text-white">brocolli</p>

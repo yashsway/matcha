@@ -3,10 +3,10 @@ import { NavLink } from 'react-router-dom';
 import "./style.scss";
 import styled from "styled-components";
 import { styleConfig } from "../../styles/mixins/variables";
-import buyIcon from "../../assets/icons/Buy.svg"
-import sellIcon from "../../assets/icons/Sell.svg";
-import searchIcon from "../../assets/icons/Search.svg";
-import profileIcon from "../../assets/icons/Profile.svg";
+import buyIcon from "../../assets/icons/buy.svg"
+import sellIcon from "../../assets/icons/sell.svg";
+import searchIcon from "../../assets/icons/search.svg";
+import profileIcon from "../../assets/icons/profile.svg";
 
 const NavTitle = styled.p`
   color: ${props => props.color};
@@ -30,7 +30,7 @@ export default class NavigationBar extends Component {
             </NavLink>
           </li>
           <li className="w-10 nav-link-wrapper"> 
-            <NavLink exact to="/sell" className="flex flex-col items-center nav-link" activeClassName="text-matcha selected">
+            <NavLink to="/sell/current" className="flex flex-col items-center nav-link" activeClassName="text-matcha selected">
               <img className="w-8 h-8" src={sellIcon} />
               <NavTitle className="text-xs mt-1">
                 Sell
