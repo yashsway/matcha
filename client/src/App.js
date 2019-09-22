@@ -12,7 +12,7 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/login" component={LoginPage}></Route>
+        <Route exact path="/" component={LoginPage}></Route>
         <Route path="/" component={MainPage}></Route>
         {/* TODO: 404 here. */}
       </Switch>

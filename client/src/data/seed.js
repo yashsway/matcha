@@ -4,7 +4,7 @@ export default {
     "email": "team76@gmail.com",
     "pass": "elevate2019"
   },
-  buyListings: {
+  buyListings: [
     {
       "title": "Potatoes",
       "rate": "0.56",
@@ -50,10 +50,10 @@ export default {
       "supplier": 2,
       "recommended": false
     },
-  },
+  ],
   users: [
     {
-      "id": "1"
+      "id": "1",
       "name": "John Doe",
       "businessName": "HoneyField Farms",
       "businessType": "farm",

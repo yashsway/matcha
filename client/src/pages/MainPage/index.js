@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
+import authManager from '../../utilities/auth';
 
 import Navigationbar from "../../components/NavigationBar";
 
@@ -8,6 +9,14 @@ import ListingDetailPage from "../ListingDetailPage";
 import AddNewListing from "../AddNewListing";
 
 export default class MainPage extends Component {
+  componentDidMount() {
+    authManager.checkIfAuthenticated((secondsLeft) => {
+      if (!secondsLeft) {
+        this.props.history.push("/");
+      }
+    });
+  }
+
   render() {
     return (
       <>
