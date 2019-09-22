@@ -12,6 +12,8 @@ export default class MainPage extends Component {
       <>
         <Switch>
           <Route path="/buy/:id" component={ListingDetailPage}></Route>
+          <Route path="/sell/:id" component={<></>}></Route>
+          <Route path="/sell" component={<></>}></Route>
           <Route path="/buy" component={BuyHomePage}></Route>
         </Switch>
         <Navigationbar />
