@@ -56,12 +56,17 @@ export class SellHomePage extends Component {
           </div>
           <Switch>
             <Route
+              path={`${this.props.match.path}/current`}
+              component={CurrentListing}
+            />
+            <Route
               path={`${this.props.match.path}/sold`}
               component={SoldItems}
             />
             <Route
-              path={`${this.props.match.path}/current`}
-              component={CurrentListing}
+              path={`${this.props.match.path}/`}
+              component={SoldItems}
+            />
             />
           </Switch>
         </section>

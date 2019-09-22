@@ -1,0 +1,18 @@
+@import "../../styles/mixins/base";
+
+.checkout-img {
+    height: 90px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.checkout-details {
+    border-bottom: 2px solid gray;
+}
+
+.input-field {
+    height: 50px;
+    border: solid 2px lightgray;
+    border-radius: 5px;
+    padding-left: 5px;
+}
