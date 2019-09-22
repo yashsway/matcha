@@ -42,13 +42,12 @@ export default class ListingDetailPage extends Component {
   getItem() {
     if (this.props.match && this.props.match.params.id) {
       if (this.state.data) {
-        return this.state.data.buyListings.find((listing) => {
+        return (this.state.data.buyListings.find((listing) => {
           return listing.title.toLowerCase() === this.props.match.params.id;
-        });
-      } else {
-        return {};
+        }) || {});
       }
     }
+    return {};
   }
 
   isSellerView() {

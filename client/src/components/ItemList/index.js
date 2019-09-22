@@ -12,7 +12,7 @@ export class ItemList extends Component {
           <p className="text-xs text-gray-600">Newest to oldest</p>
         </div>
         <ul className="mb-2">
-          <Link to={`buy/1313`}>
+          <Link to={`buy/broccoli`}>
             <li className="h-32 mb-4 relative item-card rounded brocolli-item">
               <div className="absolute bottom-0 text-white pb-1 pl-2 w-full">
                 <div className="flex flex-row justify-between mb-4">
@@ -25,7 +25,7 @@ export class ItemList extends Component {
               </div>
             </li>
           </Link>
-          <Link to={`buy/1414`}>
+          <Link to={`buy/redpeppers`}>
             <li className="h-32 mb-4 relative item-card rounded red-peppers-item">
               <div className="absolute bottom-0 text-white pb-1 pl-2 w-full">
                 <div className="flex flex-row justify-between mb-4">
@@ -38,7 +38,7 @@ export class ItemList extends Component {
               </div>
             </li>
           </Link>
-          <Link to={`buy/1313`}>
+          <Link to={`buy/potatoes`}>
             <li className="h-32 mb-4 relative item-card rounded potatoes-item">
               <div className="absolute bottom-0 text-white pb-1 pl-2 w-full">
                 <div className="flex flex-row justify-between mb-4">
@@ -51,7 +51,7 @@ export class ItemList extends Component {
               </div>
             </li>
           </Link>
-          <Link to={`buy/1313`}>
+          <Link to={`buy/carrots`}>
             <li className="h-32 mb-4 relative item-card rounded carrots-item">
               <div className="absolute bottom-0 text-white pb-1 pl-2 w-full">
                 <div className="flex flex-row justify-between mb-4">
@@ -64,7 +64,7 @@ export class ItemList extends Component {
               </div>
             </li>
           </Link>
-          <Link to={`buy/1313`}>
+          <Link to={`buy/bokchoy`}>
             <li className="h-32 mb-24 relative item-card rounded bok-choy-item">
               <div className="absolute bottom-0 text-white pb-1 pl-2 w-full">
                 <div className="flex flex-row justify-between mb-4">
