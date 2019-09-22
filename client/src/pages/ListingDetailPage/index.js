@@ -18,7 +18,7 @@ const Hero = styled.div`
   flex: 0 1 298px;
   background: ${props => `linear-gradient(360deg, #2D4133 4.55%, rgba(45, 65, 51, 0) 77.4%),
   url(${props.image})`};
-  background-size: 600px 500px;
+  background-size: cover;
 `;
 const Navigation = styled.div`
   flex: 1 0 auto;
