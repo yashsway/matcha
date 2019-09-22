@@ -548,7 +548,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 /**
@@ -1046,10 +1046,6 @@ video {
   background-color: #702459;
 }
 
-.bg-matcha{
-  background-color: #699472;
-}
-
 .hover\:bg-transparent:hover{
   background-color: transparent;
 }
@@ -1422,10 +1418,6 @@ video {
   background-color: #702459;
 }
 
-.hover\:bg-matcha:hover{
-  background-color: #699472;
-}
-
 .focus\:bg-transparent:focus{
   background-color: transparent;
 }
@@ -1796,10 +1788,6 @@ video {
 
 .focus\:bg-pink-900:focus{
   background-color: #702459;
-}
-
-.focus\:bg-matcha:focus{
-  background-color: #699472;
 }
 
 .bg-bottom{
@@ -2254,10 +2242,6 @@ video {
   border-color: #702459;
 }
 
-.border-matcha{
-  border-color: #699472;
-}
-
 .hover\:border-transparent:hover{
   border-color: transparent;
 }
@@ -2630,10 +2614,6 @@ video {
   border-color: #702459;
 }
 
-.hover\:border-matcha:hover{
-  border-color: #699472;
-}
-
 .focus\:border-transparent:focus{
   border-color: transparent;
 }
@@ -3004,10 +2984,6 @@ video {
 
 .focus\:border-pink-900:focus{
   border-color: #702459;
-}
-
-.focus\:border-matcha:focus{
-  border-color: #699472;
 }
 
 .rounded-none{
@@ -3612,12 +3588,16 @@ video {
   clear: both;
 }
 
-.font-sans-serif{
-  font-family: Barlow, Roboto Sans, sans-serif;
+.font-sans{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.font-sans-serif-body{
-  font-family: Noto Sans, Helvetica, sans-serif;
+.font-serif{
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.font-mono{
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .font-hairline{
@@ -6194,10 +6174,6 @@ video {
   color: #702459;
 }
 
-.placeholder-matcha::placeholder{
-  color: #699472;
-}
-
 .focus\:placeholder-transparent:focus::placeholder{
   color: transparent;
 }
@@ -6568,10 +6544,6 @@ video {
 
 .focus\:placeholder-pink-900:focus::placeholder{
   color: #702459;
-}
-
-.focus\:placeholder-matcha:focus::placeholder{
-  color: #699472;
 }
 
 .pointer-events-none{
@@ -7184,10 +7156,6 @@ video {
   color: #702459;
 }
 
-.text-matcha{
-  color: #699472;
-}
-
 .hover\:text-transparent:hover{
   color: transparent;
 }
@@ -7560,10 +7528,6 @@ video {
   color: #702459;
 }
 
-.hover\:text-matcha:hover{
-  color: #699472;
-}
-
 .focus\:text-transparent:focus{
   color: transparent;
 }
@@ -7934,10 +7898,6 @@ video {
 
 .focus\:text-pink-900:focus{
   color: #702459;
-}
-
-.focus\:text-matcha:focus{
-  color: #699472;
 }
 
 .text-xs{
@@ -8816,10 +8776,6 @@ video {
     background-color: #702459;
   }
 
-  .sm\:bg-matcha{
-    background-color: #699472;
-  }
-
   .sm\:hover\:bg-transparent:hover{
     background-color: transparent;
   }
@@ -9192,10 +9148,6 @@ video {
     background-color: #702459;
   }
 
-  .sm\:hover\:bg-matcha:hover{
-    background-color: #699472;
-  }
-
   .sm\:focus\:bg-transparent:focus{
     background-color: transparent;
   }
@@ -9566,10 +9518,6 @@ video {
 
   .sm\:focus\:bg-pink-900:focus{
     background-color: #702459;
-  }
-
-  .sm\:focus\:bg-matcha:focus{
-    background-color: #699472;
   }
 
   .sm\:bg-bottom{
@@ -10024,10 +9972,6 @@ video {
     border-color: #702459;
   }
 
-  .sm\:border-matcha{
-    border-color: #699472;
-  }
-
   .sm\:hover\:border-transparent:hover{
     border-color: transparent;
   }
@@ -10400,10 +10344,6 @@ video {
     border-color: #702459;
   }
 
-  .sm\:hover\:border-matcha:hover{
-    border-color: #699472;
-  }
-
   .sm\:focus\:border-transparent:focus{
     border-color: transparent;
   }
@@ -10774,10 +10714,6 @@ video {
 
   .sm\:focus\:border-pink-900:focus{
     border-color: #702459;
-  }
-
-  .sm\:focus\:border-matcha:focus{
-    border-color: #699472;
   }
 
   .sm\:rounded-none{
@@ -11382,12 +11318,16 @@ video {
     clear: both;
   }
 
-  .sm\:font-sans-serif{
-    font-family: Barlow, Roboto Sans, sans-serif;
+  .sm\:font-sans{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
-  .sm\:font-sans-serif-body{
-    font-family: Noto Sans, Helvetica, sans-serif;
+  .sm\:font-serif{
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+
+  .sm\:font-mono{
+    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
   .sm\:font-hairline{
@@ -13964,10 +13904,6 @@ video {
     color: #702459;
   }
 
-  .sm\:placeholder-matcha::placeholder{
-    color: #699472;
-  }
-
   .sm\:focus\:placeholder-transparent:focus::placeholder{
     color: transparent;
   }
@@ -14338,10 +14274,6 @@ video {
 
   .sm\:focus\:placeholder-pink-900:focus::placeholder{
     color: #702459;
-  }
-
-  .sm\:focus\:placeholder-matcha:focus::placeholder{
-    color: #699472;
   }
 
   .sm\:pointer-events-none{
@@ -14954,10 +14886,6 @@ video {
     color: #702459;
   }
 
-  .sm\:text-matcha{
-    color: #699472;
-  }
-
   .sm\:hover\:text-transparent:hover{
     color: transparent;
   }
@@ -15330,10 +15258,6 @@ video {
     color: #702459;
   }
 
-  .sm\:hover\:text-matcha:hover{
-    color: #699472;
-  }
-
   .sm\:focus\:text-transparent:focus{
     color: transparent;
   }
@@ -15704,10 +15628,6 @@ video {
 
   .sm\:focus\:text-pink-900:focus{
     color: #702459;
-  }
-
-  .sm\:focus\:text-matcha:focus{
-    color: #699472;
   }
 
   .sm\:text-xs{
@@ -16587,10 +16507,6 @@ video {
     background-color: #702459;
   }
 
-  .md\:bg-matcha{
-    background-color: #699472;
-  }
-
   .md\:hover\:bg-transparent:hover{
     background-color: transparent;
   }
@@ -16963,10 +16879,6 @@ video {
     background-color: #702459;
   }
 
-  .md\:hover\:bg-matcha:hover{
-    background-color: #699472;
-  }
-
   .md\:focus\:bg-transparent:focus{
     background-color: transparent;
   }
@@ -17337,10 +17249,6 @@ video {
 
   .md\:focus\:bg-pink-900:focus{
     background-color: #702459;
-  }
-
-  .md\:focus\:bg-matcha:focus{
-    background-color: #699472;
   }
 
   .md\:bg-bottom{
@@ -17795,10 +17703,6 @@ video {
     border-color: #702459;
   }
 
-  .md\:border-matcha{
-    border-color: #699472;
-  }
-
   .md\:hover\:border-transparent:hover{
     border-color: transparent;
   }
@@ -18171,10 +18075,6 @@ video {
     border-color: #702459;
   }
 
-  .md\:hover\:border-matcha:hover{
-    border-color: #699472;
-  }
-
   .md\:focus\:border-transparent:focus{
     border-color: transparent;
   }
@@ -18545,10 +18445,6 @@ video {
 
   .md\:focus\:border-pink-900:focus{
     border-color: #702459;
-  }
-
-  .md\:focus\:border-matcha:focus{
-    border-color: #699472;
   }
 
   .md\:rounded-none{
@@ -19153,12 +19049,16 @@ video {
     clear: both;
   }
 
-  .md\:font-sans-serif{
-    font-family: Barlow, Roboto Sans, sans-serif;
+  .md\:font-sans{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
-  .md\:font-sans-serif-body{
-    font-family: Noto Sans, Helvetica, sans-serif;
+  .md\:font-serif{
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+
+  .md\:font-mono{
+    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
   .md\:font-hairline{
@@ -21735,10 +21635,6 @@ video {
     color: #702459;
   }
 
-  .md\:placeholder-matcha::placeholder{
-    color: #699472;
-  }
-
   .md\:focus\:placeholder-transparent:focus::placeholder{
     color: transparent;
   }
@@ -22109,10 +22005,6 @@ video {
 
   .md\:focus\:placeholder-pink-900:focus::placeholder{
     color: #702459;
-  }
-
-  .md\:focus\:placeholder-matcha:focus::placeholder{
-    color: #699472;
   }
 
   .md\:pointer-events-none{
@@ -22725,10 +22617,6 @@ video {
     color: #702459;
   }
 
-  .md\:text-matcha{
-    color: #699472;
-  }
-
   .md\:hover\:text-transparent:hover{
     color: transparent;
   }
@@ -23101,10 +22989,6 @@ video {
     color: #702459;
   }
 
-  .md\:hover\:text-matcha:hover{
-    color: #699472;
-  }
-
   .md\:focus\:text-transparent:focus{
     color: transparent;
   }
@@ -23475,10 +23359,6 @@ video {
 
   .md\:focus\:text-pink-900:focus{
     color: #702459;
-  }
-
-  .md\:focus\:text-matcha:focus{
-    color: #699472;
   }
 
   .md\:text-xs{
@@ -24358,10 +24238,6 @@ video {
     background-color: #702459;
   }
 
-  .lg\:bg-matcha{
-    background-color: #699472;
-  }
-
   .lg\:hover\:bg-transparent:hover{
     background-color: transparent;
   }
@@ -24734,10 +24610,6 @@ video {
     background-color: #702459;
   }
 
-  .lg\:hover\:bg-matcha:hover{
-    background-color: #699472;
-  }
-
   .lg\:focus\:bg-transparent:focus{
     background-color: transparent;
   }
@@ -25108,10 +24980,6 @@ video {
 
   .lg\:focus\:bg-pink-900:focus{
     background-color: #702459;
-  }
-
-  .lg\:focus\:bg-matcha:focus{
-    background-color: #699472;
   }
 
   .lg\:bg-bottom{
@@ -25566,10 +25434,6 @@ video {
     border-color: #702459;
   }
 
-  .lg\:border-matcha{
-    border-color: #699472;
-  }
-
   .lg\:hover\:border-transparent:hover{
     border-color: transparent;
   }
@@ -25942,10 +25806,6 @@ video {
     border-color: #702459;
   }
 
-  .lg\:hover\:border-matcha:hover{
-    border-color: #699472;
-  }
-
   .lg\:focus\:border-transparent:focus{
     border-color: transparent;
   }
@@ -26316,10 +26176,6 @@ video {
 
   .lg\:focus\:border-pink-900:focus{
     border-color: #702459;
-  }
-
-  .lg\:focus\:border-matcha:focus{
-    border-color: #699472;
   }
 
   .lg\:rounded-none{
@@ -26924,12 +26780,16 @@ video {
     clear: both;
   }
 
-  .lg\:font-sans-serif{
-    font-family: Barlow, Roboto Sans, sans-serif;
+  .lg\:font-sans{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
-  .lg\:font-sans-serif-body{
-    font-family: Noto Sans, Helvetica, sans-serif;
+  .lg\:font-serif{
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+
+  .lg\:font-mono{
+    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
   .lg\:font-hairline{
@@ -29506,10 +29366,6 @@ video {
     color: #702459;
   }
 
-  .lg\:placeholder-matcha::placeholder{
-    color: #699472;
-  }
-
   .lg\:focus\:placeholder-transparent:focus::placeholder{
     color: transparent;
   }
@@ -29880,10 +29736,6 @@ video {
 
   .lg\:focus\:placeholder-pink-900:focus::placeholder{
     color: #702459;
-  }
-
-  .lg\:focus\:placeholder-matcha:focus::placeholder{
-    color: #699472;
   }
 
   .lg\:pointer-events-none{
@@ -30496,10 +30348,6 @@ video {
     color: #702459;
   }
 
-  .lg\:text-matcha{
-    color: #699472;
-  }
-
   .lg\:hover\:text-transparent:hover{
     color: transparent;
   }
@@ -30872,10 +30720,6 @@ video {
     color: #702459;
   }
 
-  .lg\:hover\:text-matcha:hover{
-    color: #699472;
-  }
-
   .lg\:focus\:text-transparent:focus{
     color: transparent;
   }
@@ -31246,10 +31090,6 @@ video {
 
   .lg\:focus\:text-pink-900:focus{
     color: #702459;
-  }
-
-  .lg\:focus\:text-matcha:focus{
-    color: #699472;
   }
 
   .lg\:text-xs{
@@ -32129,10 +31969,6 @@ video {
     background-color: #702459;
   }
 
-  .xl\:bg-matcha{
-    background-color: #699472;
-  }
-
   .xl\:hover\:bg-transparent:hover{
     background-color: transparent;
   }
@@ -32505,10 +32341,6 @@ video {
     background-color: #702459;
   }
 
-  .xl\:hover\:bg-matcha:hover{
-    background-color: #699472;
-  }
-
   .xl\:focus\:bg-transparent:focus{
     background-color: transparent;
   }
@@ -32879,10 +32711,6 @@ video {
 
   .xl\:focus\:bg-pink-900:focus{
     background-color: #702459;
-  }
-
-  .xl\:focus\:bg-matcha:focus{
-    background-color: #699472;
   }
 
   .xl\:bg-bottom{
@@ -33337,10 +33165,6 @@ video {
     border-color: #702459;
   }
 
-  .xl\:border-matcha{
-    border-color: #699472;
-  }
-
   .xl\:hover\:border-transparent:hover{
     border-color: transparent;
   }
@@ -33713,10 +33537,6 @@ video {
     border-color: #702459;
   }
 
-  .xl\:hover\:border-matcha:hover{
-    border-color: #699472;
-  }
-
   .xl\:focus\:border-transparent:focus{
     border-color: transparent;
   }
@@ -34087,10 +33907,6 @@ video {
 
   .xl\:focus\:border-pink-900:focus{
     border-color: #702459;
-  }
-
-  .xl\:focus\:border-matcha:focus{
-    border-color: #699472;
   }
 
   .xl\:rounded-none{
@@ -34695,12 +34511,16 @@ video {
     clear: both;
   }
 
-  .xl\:font-sans-serif{
-    font-family: Barlow, Roboto Sans, sans-serif;
+  .xl\:font-sans{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
-  .xl\:font-sans-serif-body{
-    font-family: Noto Sans, Helvetica, sans-serif;
+  .xl\:font-serif{
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+
+  .xl\:font-mono{
+    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
   .xl\:font-hairline{
@@ -37277,10 +37097,6 @@ video {
     color: #702459;
   }
 
-  .xl\:placeholder-matcha::placeholder{
-    color: #699472;
-  }
-
   .xl\:focus\:placeholder-transparent:focus::placeholder{
     color: transparent;
   }
@@ -37651,10 +37467,6 @@ video {
 
   .xl\:focus\:placeholder-pink-900:focus::placeholder{
     color: #702459;
-  }
-
-  .xl\:focus\:placeholder-matcha:focus::placeholder{
-    color: #699472;
   }
 
   .xl\:pointer-events-none{
@@ -38267,10 +38079,6 @@ video {
     color: #702459;
   }
 
-  .xl\:text-matcha{
-    color: #699472;
-  }
-
   .xl\:hover\:text-transparent:hover{
     color: transparent;
   }
@@ -38643,10 +38451,6 @@ video {
     color: #702459;
   }
 
-  .xl\:hover\:text-matcha:hover{
-    color: #699472;
-  }
-
   .xl\:focus\:text-transparent:focus{
     color: transparent;
   }
@@ -39017,10 +38821,6 @@ video {
 
   .xl\:focus\:text-pink-900:focus{
     color: #702459;
-  }
-
-  .xl\:focus\:text-matcha:focus{
-    color: #699472;
   }
 
   .xl\:text-xs{
