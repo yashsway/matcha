@@ -1,5 +1,6 @@
 import { DateTime } from 'luxon';
 import storageManager from './storage';
+const authKey = 'matchaSessionEnd';
 
 export default {
   /** 

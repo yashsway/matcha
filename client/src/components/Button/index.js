@@ -6,9 +6,9 @@ export default class Button extends Component {
     type: {
       primary: "bg-matcha hover:bg-matcha-dark text-white",
       secondary: "bg-white border-solid border-matcha border hover:bg-matcha text-matcha hover:text-white",
-      tertiary: "bg-eggshell hover:bg-eggshell-dark text-white",
+      tertiary: "bg-eggshell hover:bg-eggshell-dark text-gray-700",
       danger: "bg-brick hover:bg-brick-dark text-white",
-      warning: "bg-sunshine hover:bg-sunshine-dark text-white"
+      warning: "bg-sunshine hover:bg-sunshine-dark text-gray-900"
     }
   }
 
