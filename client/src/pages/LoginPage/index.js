@@ -4,6 +4,8 @@ import './style.scss';
 import Button from '../../components/Button';
 
 export default class LoginPage extends Component {
+  componentDidMount() 
+
   render() {
     return (
       <div>
