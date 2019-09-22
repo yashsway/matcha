@@ -31,7 +31,7 @@ export class SellHomePage extends Component {
                   fill="#699472"
                 />
               </svg>
-              <h1 className="text-2xl header ml-2">Matcha</h1>
+              <h1 className="text-xl header ml-2">Matcha</h1>
             </div>
           </div>
           <h2 className="text-2xl font-bold mb-4">Your Listings</h2>

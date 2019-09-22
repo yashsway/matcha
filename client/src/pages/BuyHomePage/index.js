@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./HomePage.scss";
 
 // Componenets
@@ -17,7 +18,7 @@ export default class HomePage extends Component {
         </div>
         <div className="flex flex-row w-24 justify-between m-auto">
           <a href="#">BUY</a>
-          <a href="#">SELL</a>
+          <Link to="sell/current">SELL</Link>
         </div>
         <Recommended />
         <ItemList />
