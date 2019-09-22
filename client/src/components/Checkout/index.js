@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./style.scss";
 import LogoBox from "../../components/LogoBox";
 import brocolli from "../../assets/images/brocolli.jpg";
+import Button from "../Button";
 
 export class Checkout extends Component {
   render() {
@@ -34,6 +35,7 @@ export class Checkout extends Component {
 					</label>
 					<input className="input-field" type="text" placeholder="Matcha App"/>
 				</form>
+        <Button className="mx-auto my-4" type="warning">Interac e-transfer</Button>
       </section>
     );
   }

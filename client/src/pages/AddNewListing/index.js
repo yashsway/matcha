@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './style.scss';
 import crossIcon from '../../assets/icons/cross.svg';
 import LogoBox from '../../components/LogoBox';
@@ -74,11 +75,15 @@ export default class AddNewListing extends Component {
         formData: Object.assign(this.state.formData || {}, this.getFormOneData())
       });
     } else if (this.state.stage === 'two') {
-      // TODO: submit new listing and redirect
-      this.setState({
-        formData: Object.assign(this.state.formData || {}, this.getFormTwoData())
-      });
+      this.props.history.push('/sell');
+      // TODO:
+      // this.setState({
+      //   formData: Object.assign(this.state.formData || {}, this.getFormTwoData())
+      // });
     }
+  }
+
+  componentDidUpdate() {
   }
 
   render() {
@@ -90,7 +95,9 @@ export default class AddNewListing extends Component {
         <div className="relative p-4 add-new-listing__card">
           <div className="flex justify-between">
             <h1 className="text-bold text-3xl">Add your listing</h1>
+            <Link to="../">
             <img src={crossIcon} alt="Cancel add listing"/>
+            </Link>
           </div>
           <div className="my-4">
             <form ref={this.state.formRef}>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Switch, Route, NavLink } from "react-router-dom";
+import { Link, Switch, Route, NavLink } from "react-router-dom";
 import "./style.scss";
 import addBtn from "../../assets/icons/plus.svg";
 
@@ -50,9 +50,11 @@ export class SellHomePage extends Component {
               Sold
             </NavLink>
           </div>
+          <Link to="/sell/add">
           <div className="add-btn h-16 w-16 rounded-full flex align-middle justify-center">
             <img className="w-5" src={addBtn} alt="Plus Icon" />
           </div>
+          </Link>
           <Switch>
             <Route
               path={`${this.props.match.path}`}
