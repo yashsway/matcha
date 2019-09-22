@@ -15,7 +15,6 @@ const Navigation = styled.div`
 const ListingTitle = styled.h1``;
 const SellerDetails = styled.div``;
 const ListingDetails = styled.div``;
-const ExchangeDetails = styled.div``;
 const ProfileLine = styled.div``;
 
 export default class ListingDetailPage extends Component {
@@ -52,10 +51,9 @@ export default class ListingDetailPage extends Component {
             <ListingQuantity className="text-gray-500">10lb available</ListingQuantity>
           </ListingPriceQuantity> */}
         </Hero>
+        <AddToCartCard className="mb-4">
+        </AddToCartCard>
         <ListingDetails className="px-4">
-          <ExchangeDetails>
-            {/* TODO: */}
-          </ExchangeDetails>
           <SellerDetails>
             <InfoLine title="supplier">
               <ProfileLine className="py-4 flex items-center">
@@ -77,9 +75,6 @@ export default class ListingDetailPage extends Component {
           </SellerDetails>
           {this.state.listing.desc}
         </ListingDetails>
-        <AddToCartCard>
-          
-        </AddToCartCard>
       </section>
     )
   }
