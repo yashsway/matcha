@@ -1,4 +1,3 @@
-import faker from 'faker';
 export default {
   login: {
     "email": "team76@gmail.com",

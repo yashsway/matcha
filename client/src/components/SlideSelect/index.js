@@ -6,7 +6,7 @@ export default (props) => {
   }
 
   return (
-    <div className={props.className || ''}>  
+    <div className={props.className || ''} onClick={onToggle}>  
       toggle here.
     </div>
   )

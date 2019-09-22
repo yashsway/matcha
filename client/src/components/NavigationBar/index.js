@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { NavLink } from 'react-router-dom';
 import "./style.scss";
 import styled from "styled-components";
-import { styleConfig } from "../../styles/mixins/variables";
 import buyIcon from "../../assets/icons/Buy.svg"
 import sellIcon from "../../assets/icons/Sell.svg";
 import searchIcon from "../../assets/icons/Search.svg";
@@ -19,7 +18,7 @@ export default class NavigationBar extends Component {
         <ul className="flex flex-row justify-around">
           <li className="w-10 nav-link-wrapper"> 
             <NavLink to="/buy" className="flex flex-col items-center nav-link" activeClassName="text-matcha selected">
-              <img className="w-8 h-8" src={buyIcon} />
+              <img className="w-8 h-8" src={buyIcon} alt="Buy icon" />
               <NavTitle className="text-xs mt-1">
                 Buy
               </NavTitle>
@@ -27,7 +26,7 @@ export default class NavigationBar extends Component {
           </li>
           <li className="w-10 nav-link-wrapper"> 
             <NavLink to="/sell" className="flex flex-col items-center nav-link" activeClassName="text-matcha selected">
-              <img className="w-8 h-8" src={sellIcon} />
+              <img className="w-8 h-8" src={sellIcon} alt="Sell icon" />
               <NavTitle className="text-xs mt-1">
                 Sell
               </NavTitle>
@@ -35,7 +34,7 @@ export default class NavigationBar extends Component {
           </li>
           <li className="w-10 nav-link-wrapper"> 
             <NavLink to="/search" className="flex flex-col items-center nav-link" activeClassName="text-matcha selected">
-              <img className="w-8 h-8" src={searchIcon} />
+              <img className="w-8 h-8" src={searchIcon} alt="Search icon" />
               <NavTitle className="text-xs mt-1">
                 Search
               </NavTitle>
@@ -43,7 +42,7 @@ export default class NavigationBar extends Component {
           </li>
           <li className="w-10 nav-link-wrapper"> 
             <NavLink to="/profile" className="flex flex-col items-center nav-link" activeClassName="text-matcha selected">
-              <img className="w-8 h-8" src={profileIcon} />
+              <img className="w-8 h-8" src={profileIcon} alt="Profile icon" />
               <NavTitle className="text-xs mt-1">
                 Profile
               </NavTitle>

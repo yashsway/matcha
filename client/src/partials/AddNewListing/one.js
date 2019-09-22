@@ -7,7 +7,7 @@ export default (props) => {
   return (
     <>
       <div className="border-solid border-matcha border rounded-lg flex justify-center items-center p-4">
-        <img src={addPicIcon} alt="add a picture here" />
+        <img src={addPicIcon} alt="Add new listing shot" />
       </div>
       <fieldset className="my-4">
         <label htmlFor="title">Title</label>
