@@ -2,7 +2,7 @@ import faker from 'faker';
 export default {
   login: {
     "email": "team76@gmail.com",
-    "pass": "elevate2019"
+    "pass": "2019"
   },
   buyListings: [
     {

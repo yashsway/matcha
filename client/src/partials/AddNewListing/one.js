@@ -10,16 +10,16 @@ export default (props) => {
         <img src={addPicIcon} alt="add a picture here" />
       </div>
       <fieldset className="my-4">
-        <label for="title">Title</label>
+        <label htmlFor="title">Title</label>
         <TextInput name="title"></TextInput>
       </fieldset>
       <fieldset className="my-2">
-        <label for="title">Expiry date</label>
-        <TextInput name="title" type="date"></TextInput>
+        <label htmlFor="expiry">Expiry date</label>
+        <TextInput name="expiry" type="date"></TextInput>
       </fieldset>
       <fieldset className="my-2">
-        <label for="title">Description</label>
-        <TextArea className="form-description"></TextArea>
+        <label htmlFor="desc">Description</label>
+        <TextArea name="desc" className="htmlForm-description"></TextArea>
       </fieldset>
     </>
   )

@@ -18,7 +18,6 @@ export default class LoginPage extends Component {
 
   submitHandler = (ev) => {
     ev.preventDefault();
-    console.log(ev.target.email.value, ev.target.password.value);
     if (ev.target.email.value === defData.login.email && ev.target.password.value === defData.login.pass) {
       authManager.authorize();
       this.props.history.push('/buy');

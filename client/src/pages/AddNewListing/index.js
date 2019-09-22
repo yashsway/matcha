@@ -17,7 +17,8 @@ export default class AddNewListing extends Component {
     two: {
       next: "submit listing",
       prev: "previous"
-    }
+    },
+    formRef: React.createRef()
   }
 
   getFormPartial() {
@@ -27,6 +28,33 @@ export default class AddNewListing extends Component {
       case "two":
         return <FormPartialTwo></FormPartialTwo>;
     }
+  }
+
+  getFormOneData() {
+    let fields = [
+      'title',
+      'expiry',
+      'desc'
+    ];
+    let results = {};
+    fields.forEach((name) => {
+      results[name] = this.state.formRef.current[name].value;
+    });
+    return results;
+  }
+
+  getFormTwoData() {
+    let fields = [
+      'about',
+      'weight',
+      'min-weight',
+      'price'
+    ];
+    let results = {};
+    fields.forEach((name) => {
+      results[name] = this.state.formRef.current[name].value;
+    });
+    return results;
   }
 
   prevStage = () => {
@@ -40,10 +68,14 @@ export default class AddNewListing extends Component {
   nextStage = () => {
     if (this.state.stage === 'one') {
       this.setState({
-        stage: 'two'
+        stage: 'two',
+        formData: Object.assign(this.state.formData || {}, this.getFormOneData())
       });
     } else if (this.state.stage === 'two') {
-      // TODO: submit listing
+      // TODO: submit new listing and redirect
+      this.setState({
+        formData: Object.assign(this.state.formData || {}, this.getFormTwoData())
+      });
     }
   }
 
@@ -59,7 +91,7 @@ export default class AddNewListing extends Component {
             <img src={crossIcon} alt="Cancel add listing"/>
           </div>
           <div className="my-4">
-            <form>
+            <form ref={this.state.formRef}>
               {this.getFormPartial()}
             </form>
           </div>
