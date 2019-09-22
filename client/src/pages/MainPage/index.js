@@ -9,6 +9,8 @@ import ListingDetailPage from "../ListingDetailPage";
 import AddNewListing from "../AddNewListing";
 import Checkout from "../../components/Checkout"
 import SellHomePage from "../SellHomePage";
+import Search from "../SearchPage";
+import ProfilePage from "../ProfilePage";
 
 export default class MainPage extends Component {
   componentDidMount() {
@@ -30,6 +32,8 @@ export default class MainPage extends Component {
           <Route exact path="/sell/details/:id"></Route>
           <Route path="/sell" component={SellHomePage}></Route>
           <Route path="/buy" component={BuyHomePage}></Route>
+          <Route path="/search" component={Search}></Route>
+          <Route path="/profile" component={ProfilePage}></Route>
         </Switch>
         <Navigationbar />
       </>

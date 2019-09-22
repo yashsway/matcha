@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import './style.scss';
 
 import Button from '../Button';
@@ -30,7 +31,9 @@ export default class AddToCartCard extends Component {
               $5.60
             </InfoLine>
             <div className="flex-grow">
-              <Button className="h-full w-full">buy now</Button>
+              <Link to="/buy/1414/checkout">
+                <Button className="h-full w-full">buy now</Button>
+              </Link>
             </div>
           </div>
         </div>

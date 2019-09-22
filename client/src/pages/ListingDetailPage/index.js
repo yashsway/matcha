@@ -34,7 +34,7 @@ export default class ListingDetailPage extends Component {
   render() {
     return (
       <section className={`${this.state.base} min-h-screen flex flex-col`}>
-        <Hero className="bg-gray-700 text-gray-100 flex flex-col">
+        <Hero className="bg-gray-700 text-gray-100 flex flex-col broccoli-buy">
           <Navigation className="p-4 flex-auto">
             <Link to="/buy">&lt; Back</Link>
           </Navigation>
