@@ -47,8 +47,10 @@ export default class ListingDetailPage extends Component {
           <Navigation className="p-4 h-3">
             <Link to="/">&lt; Back</Link>
           </Navigation>
-          <ListingTitle className="px-4 text-4xl text-gray-100">Broccoli</ListingTitle>
-          <div className="w-full border-gray-300 border-solid border-t-2 h-2"></div>
+          <div className="px-4 flex justify-between items-center">
+            <ListingTitle className="text-4xl text-gray-100 h-full">Broccoli</ListingTitle>
+            <div className="text-2xl h-full">$0.56/lb</div>
+          </div>
           <ListingPriceQuantity className="flex justify-between px-4 items-center mb-4">
             <ListingPrice className="text-2xl">$1.24/lb</ListingPrice>
             <ListingQuantity className="text-gray-500">10lb available</ListingQuantity>
