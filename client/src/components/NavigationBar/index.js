@@ -1,44 +1,57 @@
 import React, { Component } from "react";
+import { NavLink } from 'react-router-dom';
 import "./style.scss";
 import styled from "styled-components";
-import styleConfig from "../../styles/mixins/variables";
-import buy from "../../assets/icons/Buy.svg";
-import sell from "../../assets/icons/Sell.svg";
-import search from "../../assets/icons/Search.svg";
-import profile from "../../assets/icons/Profile.svg";
+import { styleConfig } from "../../styles/mixins/variables";
+import buyIcon from "../../assets/icons/Buy.svg";
+import sellIcon from "../../assets/icons/Sell.svg";
+import searchIcon from "../../assets/icons/Search.svg";
+import profileIcon from "../../assets/icons/Profile.svg";
 
 const NavTitle = styled.p`
   color: ${props => props.color};
 `;
 
 export default class NavigationBar extends Component {
+  componentDidMount() {
+    console.log(this.props);
+  }
+
   render() {
     return (
-      <div className="bg-white min-w-full navbar">
+      <div className="bg-white min-w-full navigation-bar">
         <ul className="flex flex-row justify-around">
-          <li className="flex flex-col items-center w-10">
-            <img className="w-8 h-8" src={buy} />
-            <NavTitle className="text-xs" color={styleConfig.colors.matcha}>
-              Buy
-            </NavTitle>
+          <li className="w-10 nav-link-wrapper"> 
+            <NavLink exact to="/buy" className="flex flex-col items-center nav-link" activeClassName="text-matcha selected">
+              <img className="w-8 h-8" src={buyIcon} />
+              <NavTitle className="text-xs mt-1">
+                Buy
+              </NavTitle>
+            </NavLink>
           </li>
-          <li className="flex flex-col items-center w-10">
-            <img className="w-8 h-8" src={sell} />
-            <NavTitle className="text-xs" color={styleConfig.colors.matcha}>
-              Sell
-            </NavTitle>
+          <li className="w-10 nav-link-wrapper"> 
+            <NavLink exact to="/sell" className="flex flex-col items-center nav-link" activeClassName="text-matcha selected">
+              <img className="w-8 h-8" src={sellIcon} />
+              <NavTitle className="text-xs mt-1">
+                Sell
+              </NavTitle>
+            </NavLink>
           </li>
-          <li className="flex flex-col items-center w-10">
-            <img className="w-8 h-8" src={search} />
-            <NavTitle className="text-xs" color={styleConfig.colors.matcha}>
-              Search
-            </NavTitle>
+          <li className="w-10 nav-link-wrapper"> 
+            <NavLink exact to="/search" className="flex flex-col items-center nav-link" activeClassName="text-matcha selected">
+              <img className="w-8 h-8" src={searchIcon} />
+              <NavTitle className="text-xs mt-1">
+                Search
+              </NavTitle>
+            </NavLink>
           </li>
-          <li className="flex flex-col items-center w-10">
-            <img className="w-8 h-8" src={profile} />
-            <NavTitle className="text-xs" color={styleConfig.colors.matcha}>
-              Profile
-            </NavTitle>
+          <li className="w-10 nav-link-wrapper"> 
+            <NavLink exact to="/profile" className="flex flex-col items-center nav-link" activeClassName="text-matcha selected">
+              <img className="w-8 h-8" src={profileIcon} />
+              <NavTitle className="text-xs mt-1">
+                Profile
+              </NavTitle>
+            </NavLink>
           </li>
         </ul>
       </div>
