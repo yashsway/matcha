@@ -5,6 +5,7 @@ import Navigationbar from "../../components/NavigationBar";
 
 import BuyHomePage from "../BuyHomePage";
 import ListingDetailPage from "../ListingDetailPage";
+import AddNewListing from "../AddNewListing";
 import Checkout from "../../components/Checkout"
 
 export default class MainPage extends Component {
@@ -14,6 +15,7 @@ export default class MainPage extends Component {
         <Switch>
           <Route path="/buy/:id/checkout" component={Checkout}></Route>
           <Route path="/buy/:id" component={ListingDetailPage}></Route>
+          <Route exact path="/sell/add" component={AddNewListing}></Route>
           <Route path="/sell/:id" component={<></>}></Route>
           <Route path="/sell" component={<></>}></Route>
           <Route path="/buy" component={BuyHomePage}></Route>
