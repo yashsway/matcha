@@ -1,9 +1,12 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./style.scss";
+import data from "../../data/seed"
 
 export class Recommended extends Component {
   render() {
+    console.log(data)
+
     return (
       <div className="mt-4">
         <h2 className="text-xl font-bold ">Eco Marketplace</h2>
