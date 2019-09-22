@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import "./HomePage.scss";
+import "./style.scss";
 
 // Componenets
-import Recommended from "../../components/Recommended/Recommended";
-import ItemList from "../../components/ItemList/ItemList";
+import Recommended from "../../components/Recommended";
+import ItemList from "../../components/ItemList";
 import LogoBox from "../../components/LogoBox";
 
 export default class HomePage extends Component {
@@ -14,10 +14,6 @@ export default class HomePage extends Component {
           <div className="flex flex-row justify-center h-16 items-center">
             <LogoBox></LogoBox>
           </div>
-        </div>
-        <div className="flex flex-row w-24 justify-between m-auto">
-          <a href="#">BUY</a>
-          <a href="#">SELL</a>
         </div>
         <Recommended />
         <ItemList />

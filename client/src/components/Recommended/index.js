@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Recommended.scss";
+import "./style.scss";
 
 export class Recommended extends Component {
   render() {

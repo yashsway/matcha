@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import './style.scss';
 import Button from '../../components/Button';
 
 export default class LoginPage extends Component {

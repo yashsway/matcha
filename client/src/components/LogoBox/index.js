@@ -6,7 +6,7 @@ export default class LogoBox extends Component {
     return (
       <div className="flex logo-box">
         <img src={logo} alt="Matcha logo"/>
-        <h1 className="text-xl header ml-2">Matcha</h1>
+        <h1 className="text-xl text-matcha ml-2">Matcha</h1>
       </div>
     )
   }

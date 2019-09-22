@@ -13,13 +13,9 @@ const NavTitle = styled.p`
 `;
 
 export default class NavigationBar extends Component {
-  componentDidMount() {
-    console.log(this.props);
-  }
-
   render() {
     return (
-      <div className="bg-white min-w-full navigation-bar">
+      <div className="navigation-bar bg-white min-w-full border-solid border-top border-t border-gray-400">
         <ul className="flex flex-row justify-around">
           <li className="w-10 nav-link-wrapper"> 
             <NavLink exact to="/buy" className="flex flex-col items-center nav-link" activeClassName="text-matcha selected">
