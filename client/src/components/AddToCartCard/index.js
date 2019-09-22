@@ -7,9 +7,6 @@ import Button from '../Button';
 import SlideSelect from '../SlideSelect';
 import InfoLine from '../InfoLine';
 
-const BtnTxt = styled.button`
-`;
-
 export default class AddToCartCard extends Component {
   render() {
     return (
@@ -19,7 +16,7 @@ export default class AddToCartCard extends Component {
         </div>
         <div className="py-4 px-4">
           <h5 className="text-semibold font-sans-serif text-lg">Select Quantity</h5>
-          <label for="quant" className="font-sans-serif-body text-gray-500">Minimum of 3lbs or 1.3kg purchase</label>
+          <label htmlFor="quant" className="font-sans-serif-body text-gray-500">Minimum of 3lbs or 1.3kg purchase</label>
           <div className="my-2">
             <input type="text" name="quant" className="inline-block shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mr-2" />
             <SlideSelect className="inline-block" />

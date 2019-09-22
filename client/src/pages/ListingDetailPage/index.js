@@ -27,8 +27,7 @@ export default class ListingDetailPage extends Component {
     }
   }
   componentDidMount() {
-    const { match } = this.props;
-    console.log(match.params.id);
+    // TODO: fetch based on id param
   }
 
   render() {

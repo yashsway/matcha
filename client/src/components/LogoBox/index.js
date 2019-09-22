@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import logo from '../../assets/icons/matcha.svg';
+import React from 'react';
 import './style.scss';
 import Logo from '../Logo';
 

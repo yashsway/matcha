@@ -27,6 +27,8 @@ export default class AddNewListing extends Component {
         return <FormPartialOne></FormPartialOne>;
       case "two":
         return <FormPartialTwo></FormPartialTwo>;
+      default:
+        return <></>;
     }
   }
 
