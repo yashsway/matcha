@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "./HomePage.scss";
+import "./style.scss";
 
 // Componenets
 import Recommended from "../../components/Recommended";
