@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './style.scss';
+import storage from '../../utilities/storage';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import AvatarCircle from '../../components/AvatarCircle';
@@ -27,7 +28,31 @@ export default class ListingDetailPage extends Component {
     }
   }
   componentDidMount() {
-    // TODO: fetch based on id param
+    storage.getDb().then((data) => {
+      this.setState({
+        data: data
+      })
+    });
+  }
+
+  componentDidUpdate() {
+    this.getItem();
+  }
+
+  getItem() {
+    if (this.props.match && this.props.match.params.id) {
+      if (this.state.data) {
+        return this.state.data.buyListings.find((listing) => {
+          return listing.title.toLowerCase() === this.props.match.params.id;
+        });
+      } else {
+        return {};
+      }
+    }
+  }
+
+  isSellerView() {
+    return this.props.location.pathname.includes('sell');
   }
 
   render() {
@@ -35,22 +60,14 @@ export default class ListingDetailPage extends Component {
       <section className={`${this.state.base} min-h-screen flex flex-col`}>
         <Hero className="bg-gray-700 text-gray-100 flex flex-col broccoli-buy">
           <Navigation className="p-4 flex-auto">
-            <Link to="/buy">&lt; Back</Link>
+            <Link to={`${this.isSellerView() ? '/sell' : '/buy'}`}>&lt; Back</Link>
           </Navigation>
           <div className="px-4 my-3">
-            <ListingTitle className="text-4xl text-gray-100 h-full w-2/4 inline-block">Broccoli</ListingTitle>
-            <div className="text-2xl h-full w-2/4 inline-block text-right">$0.56/lb</div>
+            <ListingTitle className="text-4xl text-gray-100 h-full w-2/4 inline-block">{this.getItem().title || 'Loading...'}</ListingTitle>
+            <div className="text-2xl h-full w-2/4 inline-block text-right">${this.getItem().rate}/{this.getItem().unit}</div>
           </div>
-          {/* <div className="px-4 flex justify-between items-center">
-            <ListingTitle className="text-4xl text-gray-100 h-full">Broccoli</ListingTitle>
-            <div className="text-2xl h-full">$0.56/lb</div>
-          </div>
-          <ListingPriceQuantity className="flex justify-between px-4 items-center mb-4">
-            <ListingPrice className="text-2xl">$1.24/lb</ListingPrice>
-            <ListingQuantity className="text-gray-500">10lb available</ListingQuantity>
-          </ListingPriceQuantity> */}
         </Hero>
-        <AddToCartCard className="mb-4">
+        <AddToCartCard isSellerView={this.isSellerView()} listing={this.getItem()} className="mb-4">
         </AddToCartCard>
         <ListingDetails className="px-4">
           <SellerDetails>
@@ -66,7 +83,7 @@ export default class ListingDetailPage extends Component {
               1A1 B2B
             </InfoLine>
             <InfoLine title="expires in">
-              2 Days
+              {this.getItem().expiry}
             </InfoLine>
             <InfoLine title="description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam enim tellus eu suspendisse molestie ullamcorper ac. Risus, non habitasse molestie bibendum. Sit enim magna sollicitudin vel. Metus, enim, et convallis justo, vivamus sit sed.

@@ -8,11 +8,14 @@ import SlideSelect from '../SlideSelect';
 import InfoLine from '../InfoLine';
 
 export default class AddToCartCard extends Component {
+  componentDidUpdate() {
+  }
+
   render() {
     return (
       <div className={`bg-white shadow w-full add-to-cart-card ${this.props.className || ''}`}>
         <div className="bg-matcha text-white py-2 px-4">
-          15 lbs available for purchase
+          {this.props.listing && this.props.listing.stock && this.props.listing.unit ? `${this.props.listing.stock} ${this.props.listing.unit} available for purchase` : 'loading stock information...'}
         </div>
         <div className="py-4 px-4">
           <h5 className="text-semibold font-sans-serif text-lg">Select Quantity</h5>
@@ -29,7 +32,7 @@ export default class AddToCartCard extends Component {
             </InfoLine>
             <div className="flex-grow">
               <Link to="/buy/1414/checkout">
-                <Button className="h-full w-full">buy now</Button>
+                <Button className="h-full w-full">{this.props.isSellerView ? 'sell again' : 'buy now'}</Button>
               </Link>
             </div>
           </div>
