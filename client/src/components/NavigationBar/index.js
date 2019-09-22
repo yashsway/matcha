@@ -18,7 +18,7 @@ export default class NavigationBar extends Component {
       <div className="navigation-bar bg-white min-w-full border-solid border-top border-t border-gray-400">
         <ul className="flex flex-row justify-around">
           <li className="w-10 nav-link-wrapper"> 
-            <NavLink exact to="/buy" className="flex flex-col items-center nav-link" activeClassName="text-matcha selected">
+            <NavLink to="/buy" className="flex flex-col items-center nav-link" activeClassName="text-matcha selected">
               <img className="w-8 h-8" src={buyIcon} />
               <NavTitle className="text-xs mt-1">
                 Buy
@@ -26,7 +26,7 @@ export default class NavigationBar extends Component {
             </NavLink>
           </li>
           <li className="w-10 nav-link-wrapper"> 
-            <NavLink exact to="/sell" className="flex flex-col items-center nav-link" activeClassName="text-matcha selected">
+            <NavLink to="/sell" className="flex flex-col items-center nav-link" activeClassName="text-matcha selected">
               <img className="w-8 h-8" src={sellIcon} />
               <NavTitle className="text-xs mt-1">
                 Sell
@@ -34,7 +34,7 @@ export default class NavigationBar extends Component {
             </NavLink>
           </li>
           <li className="w-10 nav-link-wrapper"> 
-            <NavLink exact to="/search" className="flex flex-col items-center nav-link" activeClassName="text-matcha selected">
+            <NavLink to="/search" className="flex flex-col items-center nav-link" activeClassName="text-matcha selected">
               <img className="w-8 h-8" src={searchIcon} />
               <NavTitle className="text-xs mt-1">
                 Search
@@ -42,7 +42,7 @@ export default class NavigationBar extends Component {
             </NavLink>
           </li>
           <li className="w-10 nav-link-wrapper"> 
-            <NavLink exact to="/profile" className="flex flex-col items-center nav-link" activeClassName="text-matcha selected">
+            <NavLink to="/profile" className="flex flex-col items-center nav-link" activeClassName="text-matcha selected">
               <img className="w-8 h-8" src={profileIcon} />
               <NavTitle className="text-xs mt-1">
                 Profile
