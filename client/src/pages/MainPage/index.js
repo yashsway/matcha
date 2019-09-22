@@ -27,7 +27,7 @@ export default class MainPage extends Component {
           <Route path="/buy/:id" component={ListingDetailPage}></Route>
           <Route exact path="/sell/add" component={AddNewListing}></Route>
           {/* TODO: sell details route */}
-          <Route path="/sell/:id"></Route>
+          <Route exact path="/sell/details/:id"></Route>
           <Route path="/sell" component={SellHomePage}></Route>
           <Route path="/buy" component={BuyHomePage}></Route>
         </Switch>

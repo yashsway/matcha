@@ -26,7 +26,7 @@ export default class NavigationBar extends Component {
             </NavLink>
           </li>
           <li className="w-10 nav-link-wrapper"> 
-            <NavLink to="/sell/current" className="flex flex-col items-center nav-link" activeClassName="text-matcha selected">
+            <NavLink to="/sell" className="flex flex-col items-center nav-link" activeClassName="text-matcha selected">
               <img className="w-8 h-8" src={sellIcon} />
               <NavTitle className="text-xs mt-1">
                 Sell

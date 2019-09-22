@@ -37,7 +37,8 @@ export class SellHomePage extends Component {
             <NavLink
               activeClassName="sell-active"
               className="text-xl"
-              to={`${this.props.match.path}/current`}
+              exact
+              to={`${this.props.match.path}/`}
             >
               Current
             </NavLink>
