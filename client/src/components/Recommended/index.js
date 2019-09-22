@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom"
 import "./style.scss";
 
 export class Recommended extends Component {
@@ -11,15 +12,18 @@ export class Recommended extends Component {
           <h6 className="text-xs">See All</h6>
         </div>
         <ul className="recommended-list">
+          <Link to={`buy/1212`}>
           <li className="recommended-list__item rounded brocolli">
             <div className="absolute bottom-0 text-white pb-1 pl-2 w-full">
               <div className="flex flex-row justify-between mb-4">
-                <p className="text-white">Brocolli</p>
+                <p className="text-white">Broccoli</p>
                 <p className="text-white pr-1">$0.56/lb</p>
               </div>
               <p className="absolute bottom-0 text-xs mb-1">Honeyfield Farms</p>
             </div>
           </li>
+          </Link>
+          <Link to={`buy/1212`}>
           <li className="recommended-list__item rounded bok-choy">
             <div className="absolute bottom-0 text-white pb-1 pl-2 w-full">
               <div className="flex flex-row justify-between mb-4">
@@ -29,6 +33,7 @@ export class Recommended extends Component {
               <p className="absolute bottom-0 text-xs mb-1">Honeyfield Farms</p>
             </div>
           </li>
+          </Link>
           <li className="recommended-list__item rounded carrots">
             <div className="absolute bottom-0 text-white pb-1 pl-2 w-full">
               <div className="flex flex-row justify-between mb-4">

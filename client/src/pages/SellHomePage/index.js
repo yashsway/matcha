@@ -12,8 +12,6 @@ import SoldItems from "../../components/SoldItems";
 
 export class SellHomePage extends Component {
   render() {
-    console.log(this.props);
-
     return (
       <>
         <section className="px-4">

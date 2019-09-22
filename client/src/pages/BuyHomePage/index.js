@@ -17,7 +17,7 @@ export default class HomePage extends Component {
           </div>
         </div>
         <div className="flex flex-row w-24 justify-between m-auto">
-          <a href="#">BUY</a>
+          <Link to="buy">BUY</Link>
           <Link to="sell/current">SELL</Link>
         </div>
         <Recommended />
