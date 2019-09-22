@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import "./HomePage.scss";
 
 // Componenets
-import Recommended from "../../components/Recommended/Recommended";
-import ItemList from "../../components/ItemList/ItemList";
+import Recommended from "../../components/Recommended/";
+import ItemList from "../../components/ItemList";
 
 export default class HomePage extends Component {
   render() {
